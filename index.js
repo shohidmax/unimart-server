@@ -8,7 +8,7 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 const env = process.env;
-const uri = `mongodb+srv://${env.REACT_APP_Mongoid}:${env.REACT_APP_Mongopass}@cluster0.lg5wc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://unimart1:9e8tzBg4NiNzqWA3@cluster0.lg5wc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
 
 
